@@ -4,8 +4,7 @@ public class q1_check_palindrome {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String text = sc.next();
-        int j = text.length()-1;
-        int flag=0;
+        int flag=0,j=text.length()-1;
         for(int i=0;i<text.length()/2;i++,j--){
             if(text.charAt(i)!=text.charAt(j)){
                 flag=1;
